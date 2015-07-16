@@ -63,9 +63,13 @@ $(".//div[@id='Header']") {
   		# Move "Category List" element on bottom of #Menu element
   		move_here("../../div[@id='Wrapper']/div[@class='Left']/div[@id='SideCategoryList']", "bottom")
   		$$("li") {
-    		add_class("mw_bar2")
+    		add_class("mw_bar3")
   		}
 	}
+  remove("./br")
 }
 remove(".//div[@id='AjaxLoading']") 
 remove(".//div[@id='TopMenu']")
+//remove(".//div[@id='Menu']") 
+//remove(".//div[@id='LayoutColumn1']") 
+remove(".//span[@class='FeedLink FloatRight']//ancestor::h2")

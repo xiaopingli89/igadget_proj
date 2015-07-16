@@ -1,5 +1,83 @@
 // Every page should have a class on the body
 // Scope that in each file at the start
-.mw-home {
-  
+#Wrapper{
+	.ProductList{
+		strong a{
+			color: $color5;
+		}
+		ul{
+			background-color: $color5;
+		}
+	li{
+		list-style-type: none;
+		background-color: #f0f0f0; 
+		border: 1px solid #e5e5e5; 
+		width: auto !important; 
+		height: 200px; 
+		padding: 8px; 
+		margin-bottom: 10px;
+		position: relative; 
+		max-width: 120px;
+		@include clearfix(); 
+		.ProductDetails{
+			display: block;
+			margin-bottom: 2px;
+			text-align: center;
+			height: 30px !important;
+			a{
+				font-size: 10px
+			} 
+
+		}
+		.ProductImage{
+			//float: left;
+			margin-right: 10px; 
+			background-color: $background4; 
+			text-align: center;
+			a{
+				display: table-cell; 
+				vertical-align: middle; 
+				height: 120px;
+				img{
+					max-width: 120px; max-height: 120px;
+				} 
+			}
+		}
+		.ProductPriceRating{
+			height: 40px; 
+			display: block;
+			padding: 0;
+			font-size: 12px;
+			em {
+				color: #F33;
+			} 
+			
+			.Rating {
+				color: #797979; }
+		}
+		.ProductActionAdd{ 
+			@extend .mw_bar3;
+			border-radius: 5px;
+			display: block; 
+			font-size: 12px;
+			text-align: center;
+			a{
+				margin: auto auto;
+				color: $color4 !important; 
+
+			}
+		} 
+		.ProductCompareButton{
+			display: none; 
+		}
+	}
+	}
+}
+
+[data-ur-set="carousel"] {
+  overflow: hidden;
+  position: relative;
+}
+[data-ur-carousel-component="item"] {
+  float: left;
 }

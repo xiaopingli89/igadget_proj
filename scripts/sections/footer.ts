@@ -1,5 +1,10 @@
 $("./body") {
-  insert("footer", "Powered by Moovweb", class: "mw-footer") {
-    # Move stuff here
+  insert("footer", "Powered by", class: "mw-footer") {
+    insert("div", class: "sprites-moovweb")
   }
+}
+$(".//div[@id='Footer']"){
+	$(".//a"){
+		remove()
+	}
 }

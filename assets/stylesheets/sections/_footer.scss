@@ -1,3 +1,17 @@
-footer.mw-footer {
-  
+#Footer{
+	@include background(linear-gradient(top, #852201, #6a1b00));
+	color: white;
+	p{
+		margin: 10 auto;
+	}
+}
+footer{
+	text-align: center;
+	padding: 10px auto;
+	color: white;
+	@include background(linear-gradient(top, #852201, #6a1b00));
+	.sprites-moovweb{
+		margin: auto;
+
+	}
 }

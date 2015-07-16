@@ -11,14 +11,17 @@
   //width: 100%;
   border-top: 1px solid black;
   #Logo {
-    min-height: 48px;
+    min-height: 60px;
     display: block;
     @include background(linear-gradient(#C14102 0, shade(#C14102, 20%) 100%));
     #LogoContainer{
       float: left;
       h1 {
+          text-decoration: none;
           margin: 0;
-          padding-left: 10px;
+          padding-left: 5px;
+          padding-top: 20px;
+          padding-right: 0px;
       a {
         font-size: 22px;
         text-shadow: 0 -1px rgba(0,0,0,0.9);
@@ -66,6 +69,17 @@
       display: block;
       &[data-ur-state="enabled"] span {
         @extend .sprites-menu-on;
+      }
+    }
+  }
+  #Menu{
+    h2{
+      color: white;
+    }
+    ul{
+      padding: 0px;
+      .mw_bar2{
+        list-style-type: none;
       }
     }
   }
