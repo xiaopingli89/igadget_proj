@@ -56,13 +56,14 @@
 				color: #797979; }
 		}
 		.ProductActionAdd{ 
-			@extend .mw_bar3;
+			@extend .mw_bar1;
 			border-radius: 5px;
 			display: block; 
 			font-size: 12px;
 			text-align: center;
+			padding: auto;
 			a{
-				margin: auto auto;
+				margin: auto;
 				color: $color4 !important; 
 
 			}
